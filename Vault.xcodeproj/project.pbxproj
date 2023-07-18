@@ -7,65 +7,62 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0ABDB9A42A663B5700BF18D4 /* VaultApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABDB9A32A663B5700BF18D4 /* VaultApp.swift */; };
-		0ABDB9A62A663B5700BF18D4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABDB9A52A663B5700BF18D4 /* ContentView.swift */; };
-		0ABDB9A82A663B5C00BF18D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ABDB9A72A663B5C00BF18D4 /* Assets.xcassets */; };
-		0ABDB9AB2A663B5C00BF18D4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ABDB9AA2A663B5C00BF18D4 /* Preview Assets.xcassets */; };
-		0ABDB9AD2A663B5C00BF18D4 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABDB9AC2A663B5C00BF18D4 /* Persistence.swift */; };
-		0ABDB9B02A663B5C00BF18D4 /* Vault.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0ABDB9AE2A663B5C00BF18D4 /* Vault.xcdatamodeld */; };
-		0ABDB9BA2A663B5D00BF18D4 /* VaultTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABDB9B92A663B5D00BF18D4 /* VaultTests.swift */; };
-		0ABDB9C42A663B5D00BF18D4 /* VaultUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABDB9C32A663B5D00BF18D4 /* VaultUITests.swift */; };
-		0ABDB9C62A663B5D00BF18D4 /* VaultUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABDB9C52A663B5D00BF18D4 /* VaultUITestsLaunchTests.swift */; };
+		C999B0132A66C42500ADDC05 /* VaultApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C999B0122A66C42500ADDC05 /* VaultApp.swift */; };
+		C999B0152A66C42500ADDC05 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C999B0142A66C42500ADDC05 /* ContentView.swift */; };
+		C999B0172A66C42600ADDC05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C999B0162A66C42600ADDC05 /* Assets.xcassets */; };
+		C999B01B2A66C42600ADDC05 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C999B01A2A66C42600ADDC05 /* Preview Assets.xcassets */; };
+		C999B0252A66C42600ADDC05 /* VaultTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C999B0242A66C42600ADDC05 /* VaultTests.swift */; };
+		C999B02F2A66C42600ADDC05 /* VaultUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C999B02E2A66C42600ADDC05 /* VaultUITests.swift */; };
+		C999B0312A66C42600ADDC05 /* VaultUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C999B0302A66C42600ADDC05 /* VaultUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0ABDB9B62A663B5D00BF18D4 /* PBXContainerItemProxy */ = {
+		C999B0212A66C42600ADDC05 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 0ABDB9982A663B5700BF18D4 /* Project object */;
+			containerPortal = C999B0072A66C42500ADDC05 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 0ABDB99F2A663B5700BF18D4;
+			remoteGlobalIDString = C999B00E2A66C42500ADDC05;
 			remoteInfo = Vault;
 		};
-		0ABDB9C02A663B5D00BF18D4 /* PBXContainerItemProxy */ = {
+		C999B02B2A66C42600ADDC05 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 0ABDB9982A663B5700BF18D4 /* Project object */;
+			containerPortal = C999B0072A66C42500ADDC05 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 0ABDB99F2A663B5700BF18D4;
+			remoteGlobalIDString = C999B00E2A66C42500ADDC05;
 			remoteInfo = Vault;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0ABDB9A02A663B5700BF18D4 /* Vault.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vault.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0ABDB9A32A663B5700BF18D4 /* VaultApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaultApp.swift; sourceTree = "<group>"; };
-		0ABDB9A52A663B5700BF18D4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		0ABDB9A72A663B5C00BF18D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0ABDB9AA2A663B5C00BF18D4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		0ABDB9AC2A663B5C00BF18D4 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		0ABDB9AF2A663B5C00BF18D4 /* Vault.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Vault.xcdatamodel; sourceTree = "<group>"; };
-		0ABDB9B52A663B5D00BF18D4 /* VaultTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VaultTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0ABDB9B92A663B5D00BF18D4 /* VaultTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaultTests.swift; sourceTree = "<group>"; };
-		0ABDB9BF2A663B5D00BF18D4 /* VaultUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VaultUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0ABDB9C32A663B5D00BF18D4 /* VaultUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaultUITests.swift; sourceTree = "<group>"; };
-		0ABDB9C52A663B5D00BF18D4 /* VaultUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaultUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C999B00F2A66C42500ADDC05 /* Vault.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vault.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C999B0122A66C42500ADDC05 /* VaultApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaultApp.swift; sourceTree = "<group>"; };
+		C999B0142A66C42500ADDC05 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C999B0162A66C42600ADDC05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C999B0182A66C42600ADDC05 /* Vault.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Vault.entitlements; sourceTree = "<group>"; };
+		C999B01A2A66C42600ADDC05 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C999B0202A66C42600ADDC05 /* VaultTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VaultTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C999B0242A66C42600ADDC05 /* VaultTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaultTests.swift; sourceTree = "<group>"; };
+		C999B02A2A66C42600ADDC05 /* VaultUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VaultUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C999B02E2A66C42600ADDC05 /* VaultUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaultUITests.swift; sourceTree = "<group>"; };
+		C999B0302A66C42600ADDC05 /* VaultUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaultUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0ABDB99D2A663B5700BF18D4 /* Frameworks */ = {
+		C999B00C2A66C42500ADDC05 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0ABDB9B22A663B5D00BF18D4 /* Frameworks */ = {
+		C999B01D2A66C42600ADDC05 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0ABDB9BC2A663B5D00BF18D4 /* Frameworks */ = {
+		C999B0272A66C42600ADDC05 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -75,60 +72,59 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0ABDB9972A663B5700BF18D4 = {
+		C999B0062A66C42500ADDC05 = {
 			isa = PBXGroup;
 			children = (
-				0ABDB9A22A663B5700BF18D4 /* Vault */,
-				0ABDB9B82A663B5D00BF18D4 /* VaultTests */,
-				0ABDB9C22A663B5D00BF18D4 /* VaultUITests */,
-				0ABDB9A12A663B5700BF18D4 /* Products */,
+				C999B0112A66C42500ADDC05 /* Vault */,
+				C999B0232A66C42600ADDC05 /* VaultTests */,
+				C999B02D2A66C42600ADDC05 /* VaultUITests */,
+				C999B0102A66C42500ADDC05 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		0ABDB9A12A663B5700BF18D4 /* Products */ = {
+		C999B0102A66C42500ADDC05 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0ABDB9A02A663B5700BF18D4 /* Vault.app */,
-				0ABDB9B52A663B5D00BF18D4 /* VaultTests.xctest */,
-				0ABDB9BF2A663B5D00BF18D4 /* VaultUITests.xctest */,
+				C999B00F2A66C42500ADDC05 /* Vault.app */,
+				C999B0202A66C42600ADDC05 /* VaultTests.xctest */,
+				C999B02A2A66C42600ADDC05 /* VaultUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0ABDB9A22A663B5700BF18D4 /* Vault */ = {
+		C999B0112A66C42500ADDC05 /* Vault */ = {
 			isa = PBXGroup;
 			children = (
-				0ABDB9A32A663B5700BF18D4 /* VaultApp.swift */,
-				0ABDB9A52A663B5700BF18D4 /* ContentView.swift */,
-				0ABDB9A72A663B5C00BF18D4 /* Assets.xcassets */,
-				0ABDB9AC2A663B5C00BF18D4 /* Persistence.swift */,
-				0ABDB9AE2A663B5C00BF18D4 /* Vault.xcdatamodeld */,
-				0ABDB9A92A663B5C00BF18D4 /* Preview Content */,
+				C999B0122A66C42500ADDC05 /* VaultApp.swift */,
+				C999B0142A66C42500ADDC05 /* ContentView.swift */,
+				C999B0162A66C42600ADDC05 /* Assets.xcassets */,
+				C999B0182A66C42600ADDC05 /* Vault.entitlements */,
+				C999B0192A66C42600ADDC05 /* Preview Content */,
 			);
 			path = Vault;
 			sourceTree = "<group>";
 		};
-		0ABDB9A92A663B5C00BF18D4 /* Preview Content */ = {
+		C999B0192A66C42600ADDC05 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				0ABDB9AA2A663B5C00BF18D4 /* Preview Assets.xcassets */,
+				C999B01A2A66C42600ADDC05 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		0ABDB9B82A663B5D00BF18D4 /* VaultTests */ = {
+		C999B0232A66C42600ADDC05 /* VaultTests */ = {
 			isa = PBXGroup;
 			children = (
-				0ABDB9B92A663B5D00BF18D4 /* VaultTests.swift */,
+				C999B0242A66C42600ADDC05 /* VaultTests.swift */,
 			);
 			path = VaultTests;
 			sourceTree = "<group>";
 		};
-		0ABDB9C22A663B5D00BF18D4 /* VaultUITests */ = {
+		C999B02D2A66C42600ADDC05 /* VaultUITests */ = {
 			isa = PBXGroup;
 			children = (
-				0ABDB9C32A663B5D00BF18D4 /* VaultUITests.swift */,
-				0ABDB9C52A663B5D00BF18D4 /* VaultUITestsLaunchTests.swift */,
+				C999B02E2A66C42600ADDC05 /* VaultUITests.swift */,
+				C999B0302A66C42600ADDC05 /* VaultUITestsLaunchTests.swift */,
 			);
 			path = VaultUITests;
 			sourceTree = "<group>";
@@ -136,13 +132,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0ABDB99F2A663B5700BF18D4 /* Vault */ = {
+		C999B00E2A66C42500ADDC05 /* Vault */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0ABDB9C92A663B5D00BF18D4 /* Build configuration list for PBXNativeTarget "Vault" */;
+			buildConfigurationList = C999B0342A66C42600ADDC05 /* Build configuration list for PBXNativeTarget "Vault" */;
 			buildPhases = (
-				0ABDB99C2A663B5700BF18D4 /* Sources */,
-				0ABDB99D2A663B5700BF18D4 /* Frameworks */,
-				0ABDB99E2A663B5700BF18D4 /* Resources */,
+				C999B00B2A66C42500ADDC05 /* Sources */,
+				C999B00C2A66C42500ADDC05 /* Frameworks */,
+				C999B00D2A66C42500ADDC05 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -150,69 +146,69 @@
 			);
 			name = Vault;
 			productName = Vault;
-			productReference = 0ABDB9A02A663B5700BF18D4 /* Vault.app */;
+			productReference = C999B00F2A66C42500ADDC05 /* Vault.app */;
 			productType = "com.apple.product-type.application";
 		};
-		0ABDB9B42A663B5D00BF18D4 /* VaultTests */ = {
+		C999B01F2A66C42600ADDC05 /* VaultTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0ABDB9CC2A663B5D00BF18D4 /* Build configuration list for PBXNativeTarget "VaultTests" */;
+			buildConfigurationList = C999B0372A66C42600ADDC05 /* Build configuration list for PBXNativeTarget "VaultTests" */;
 			buildPhases = (
-				0ABDB9B12A663B5D00BF18D4 /* Sources */,
-				0ABDB9B22A663B5D00BF18D4 /* Frameworks */,
-				0ABDB9B32A663B5D00BF18D4 /* Resources */,
+				C999B01C2A66C42600ADDC05 /* Sources */,
+				C999B01D2A66C42600ADDC05 /* Frameworks */,
+				C999B01E2A66C42600ADDC05 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				0ABDB9B72A663B5D00BF18D4 /* PBXTargetDependency */,
+				C999B0222A66C42600ADDC05 /* PBXTargetDependency */,
 			);
 			name = VaultTests;
 			productName = VaultTests;
-			productReference = 0ABDB9B52A663B5D00BF18D4 /* VaultTests.xctest */;
+			productReference = C999B0202A66C42600ADDC05 /* VaultTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		0ABDB9BE2A663B5D00BF18D4 /* VaultUITests */ = {
+		C999B0292A66C42600ADDC05 /* VaultUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0ABDB9CF2A663B5D00BF18D4 /* Build configuration list for PBXNativeTarget "VaultUITests" */;
+			buildConfigurationList = C999B03A2A66C42600ADDC05 /* Build configuration list for PBXNativeTarget "VaultUITests" */;
 			buildPhases = (
-				0ABDB9BB2A663B5D00BF18D4 /* Sources */,
-				0ABDB9BC2A663B5D00BF18D4 /* Frameworks */,
-				0ABDB9BD2A663B5D00BF18D4 /* Resources */,
+				C999B0262A66C42600ADDC05 /* Sources */,
+				C999B0272A66C42600ADDC05 /* Frameworks */,
+				C999B0282A66C42600ADDC05 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				0ABDB9C12A663B5D00BF18D4 /* PBXTargetDependency */,
+				C999B02C2A66C42600ADDC05 /* PBXTargetDependency */,
 			);
 			name = VaultUITests;
 			productName = VaultUITests;
-			productReference = 0ABDB9BF2A663B5D00BF18D4 /* VaultUITests.xctest */;
+			productReference = C999B02A2A66C42600ADDC05 /* VaultUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		0ABDB9982A663B5700BF18D4 /* Project object */ = {
+		C999B0072A66C42500ADDC05 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1410;
-				LastUpgradeCheck = 1410;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
 				TargetAttributes = {
-					0ABDB99F2A663B5700BF18D4 = {
-						CreatedOnToolsVersion = 14.1;
+					C999B00E2A66C42500ADDC05 = {
+						CreatedOnToolsVersion = 14.3.1;
 					};
-					0ABDB9B42A663B5D00BF18D4 = {
-						CreatedOnToolsVersion = 14.1;
-						TestTargetID = 0ABDB99F2A663B5700BF18D4;
+					C999B01F2A66C42600ADDC05 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = C999B00E2A66C42500ADDC05;
 					};
-					0ABDB9BE2A663B5D00BF18D4 = {
-						CreatedOnToolsVersion = 14.1;
-						TestTargetID = 0ABDB99F2A663B5700BF18D4;
+					C999B0292A66C42600ADDC05 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = C999B00E2A66C42500ADDC05;
 					};
 				};
 			};
-			buildConfigurationList = 0ABDB99B2A663B5700BF18D4 /* Build configuration list for PBXProject "Vault" */;
+			buildConfigurationList = C999B00A2A66C42500ADDC05 /* Build configuration list for PBXProject "Vault" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -220,36 +216,36 @@
 				en,
 				Base,
 			);
-			mainGroup = 0ABDB9972A663B5700BF18D4;
-			productRefGroup = 0ABDB9A12A663B5700BF18D4 /* Products */;
+			mainGroup = C999B0062A66C42500ADDC05;
+			productRefGroup = C999B0102A66C42500ADDC05 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0ABDB99F2A663B5700BF18D4 /* Vault */,
-				0ABDB9B42A663B5D00BF18D4 /* VaultTests */,
-				0ABDB9BE2A663B5D00BF18D4 /* VaultUITests */,
+				C999B00E2A66C42500ADDC05 /* Vault */,
+				C999B01F2A66C42600ADDC05 /* VaultTests */,
+				C999B0292A66C42600ADDC05 /* VaultUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		0ABDB99E2A663B5700BF18D4 /* Resources */ = {
+		C999B00D2A66C42500ADDC05 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0ABDB9AB2A663B5C00BF18D4 /* Preview Assets.xcassets in Resources */,
-				0ABDB9A82A663B5C00BF18D4 /* Assets.xcassets in Resources */,
+				C999B01B2A66C42600ADDC05 /* Preview Assets.xcassets in Resources */,
+				C999B0172A66C42600ADDC05 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0ABDB9B32A663B5D00BF18D4 /* Resources */ = {
+		C999B01E2A66C42600ADDC05 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0ABDB9BD2A663B5D00BF18D4 /* Resources */ = {
+		C999B0282A66C42600ADDC05 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -259,51 +255,49 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0ABDB99C2A663B5700BF18D4 /* Sources */ = {
+		C999B00B2A66C42500ADDC05 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0ABDB9AD2A663B5C00BF18D4 /* Persistence.swift in Sources */,
-				0ABDB9A62A663B5700BF18D4 /* ContentView.swift in Sources */,
-				0ABDB9B02A663B5C00BF18D4 /* Vault.xcdatamodeld in Sources */,
-				0ABDB9A42A663B5700BF18D4 /* VaultApp.swift in Sources */,
+				C999B0152A66C42500ADDC05 /* ContentView.swift in Sources */,
+				C999B0132A66C42500ADDC05 /* VaultApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0ABDB9B12A663B5D00BF18D4 /* Sources */ = {
+		C999B01C2A66C42600ADDC05 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0ABDB9BA2A663B5D00BF18D4 /* VaultTests.swift in Sources */,
+				C999B0252A66C42600ADDC05 /* VaultTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0ABDB9BB2A663B5D00BF18D4 /* Sources */ = {
+		C999B0262A66C42600ADDC05 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0ABDB9C42A663B5D00BF18D4 /* VaultUITests.swift in Sources */,
-				0ABDB9C62A663B5D00BF18D4 /* VaultUITestsLaunchTests.swift in Sources */,
+				C999B02F2A66C42600ADDC05 /* VaultUITests.swift in Sources */,
+				C999B0312A66C42600ADDC05 /* VaultUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0ABDB9B72A663B5D00BF18D4 /* PBXTargetDependency */ = {
+		C999B0222A66C42600ADDC05 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0ABDB99F2A663B5700BF18D4 /* Vault */;
-			targetProxy = 0ABDB9B62A663B5D00BF18D4 /* PBXContainerItemProxy */;
+			target = C999B00E2A66C42500ADDC05 /* Vault */;
+			targetProxy = C999B0212A66C42600ADDC05 /* PBXContainerItemProxy */;
 		};
-		0ABDB9C12A663B5D00BF18D4 /* PBXTargetDependency */ = {
+		C999B02C2A66C42600ADDC05 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0ABDB99F2A663B5700BF18D4 /* Vault */;
-			targetProxy = 0ABDB9C02A663B5D00BF18D4 /* PBXContainerItemProxy */;
+			target = C999B00E2A66C42500ADDC05 /* Vault */;
+			targetProxy = C999B02B2A66C42600ADDC05 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0ABDB9C72A663B5D00BF18D4 /* Debug */ = {
+		C999B0322A66C42600ADDC05 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -353,17 +347,15 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		0ABDB9C82A663B5D00BF18D4 /* Release */ = {
+		C999B0332A66C42600ADDC05 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -407,79 +399,90 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		0ABDB9CA2A663B5D00BF18D4 /* Debug */ = {
+		C999B0352A66C42600ADDC05 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Vault/Vault.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1.0.0;
 				DEVELOPMENT_ASSET_PATHS = "\"Vault/Preview Content\"";
 				DEVELOPMENT_TEAM = ZXPXG49X5L;
+				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = Vault;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.growatt.hut.Vault;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		0ABDB9CB2A663B5D00BF18D4 /* Release */ = {
+		C999B0362A66C42600ADDC05 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Vault/Vault.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1.0.0;
 				DEVELOPMENT_ASSET_PATHS = "\"Vault/Preview Content\"";
 				DEVELOPMENT_TEAM = ZXPXG49X5L;
+				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = Vault;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.growatt.hut.Vault;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
-		0ABDB9CD2A663B5D00BF18D4 /* Debug */ = {
+		C999B0382A66C42600ADDC05 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -488,10 +491,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZXPXG49X5L;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.growatt.hut.VaultTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -499,7 +505,7 @@
 			};
 			name = Debug;
 		};
-		0ABDB9CE2A663B5D00BF18D4 /* Release */ = {
+		C999B0392A66C42600ADDC05 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -508,10 +514,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZXPXG49X5L;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.growatt.hut.VaultTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -519,7 +528,7 @@
 			};
 			name = Release;
 		};
-		0ABDB9D02A663B5D00BF18D4 /* Debug */ = {
+		C999B03B2A66C42600ADDC05 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -527,9 +536,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZXPXG49X5L;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.growatt.hut.VaultUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -537,7 +550,7 @@
 			};
 			name = Debug;
 		};
-		0ABDB9D12A663B5D00BF18D4 /* Release */ = {
+		C999B03C2A66C42600ADDC05 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -545,9 +558,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZXPXG49X5L;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.growatt.hut.VaultUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -558,56 +575,43 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0ABDB99B2A663B5700BF18D4 /* Build configuration list for PBXProject "Vault" */ = {
+		C999B00A2A66C42500ADDC05 /* Build configuration list for PBXProject "Vault" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0ABDB9C72A663B5D00BF18D4 /* Debug */,
-				0ABDB9C82A663B5D00BF18D4 /* Release */,
+				C999B0322A66C42600ADDC05 /* Debug */,
+				C999B0332A66C42600ADDC05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0ABDB9C92A663B5D00BF18D4 /* Build configuration list for PBXNativeTarget "Vault" */ = {
+		C999B0342A66C42600ADDC05 /* Build configuration list for PBXNativeTarget "Vault" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0ABDB9CA2A663B5D00BF18D4 /* Debug */,
-				0ABDB9CB2A663B5D00BF18D4 /* Release */,
+				C999B0352A66C42600ADDC05 /* Debug */,
+				C999B0362A66C42600ADDC05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0ABDB9CC2A663B5D00BF18D4 /* Build configuration list for PBXNativeTarget "VaultTests" */ = {
+		C999B0372A66C42600ADDC05 /* Build configuration list for PBXNativeTarget "VaultTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0ABDB9CD2A663B5D00BF18D4 /* Debug */,
-				0ABDB9CE2A663B5D00BF18D4 /* Release */,
+				C999B0382A66C42600ADDC05 /* Debug */,
+				C999B0392A66C42600ADDC05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0ABDB9CF2A663B5D00BF18D4 /* Build configuration list for PBXNativeTarget "VaultUITests" */ = {
+		C999B03A2A66C42600ADDC05 /* Build configuration list for PBXNativeTarget "VaultUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0ABDB9D02A663B5D00BF18D4 /* Debug */,
-				0ABDB9D12A663B5D00BF18D4 /* Release */,
+				C999B03B2A66C42600ADDC05 /* Debug */,
+				C999B03C2A66C42600ADDC05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		0ABDB9AE2A663B5C00BF18D4 /* Vault.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				0ABDB9AF2A663B5C00BF18D4 /* Vault.xcdatamodel */,
-			);
-			currentVersion = 0ABDB9AF2A663B5C00BF18D4 /* Vault.xcdatamodel */;
-			path = Vault.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
-	rootObject = 0ABDB9982A663B5700BF18D4 /* Project object */;
+	rootObject = C999B0072A66C42500ADDC05 /* Project object */;
 }

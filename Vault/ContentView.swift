@@ -2,7 +2,7 @@
 //  ContentView.swift
 //  Vault
 //
-//  Created by Stoull Hut on 2023/7/18.
+//  Created by Kevin on 2023/7/19.
 //
 
 import SwiftUI
@@ -10,10 +10,10 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
+            Image(systemName: "play.tv")
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Text("Vault-all for movies")
         }
         .padding()
     }

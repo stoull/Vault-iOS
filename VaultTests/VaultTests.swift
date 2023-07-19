@@ -2,10 +2,11 @@
 //  VaultTests.swift
 //  VaultTests
 //
-//  Created by Stoull Hut on 2023/7/18.
+//  Created by Kevin on 2023/7/19.
 //
 
 import XCTest
+@testable import Vault
 
 final class VaultTests: XCTestCase {
 
@@ -27,7 +28,7 @@ final class VaultTests: XCTestCase {
 
     func testPerformanceExample() throws {
         // This is an example of a performance test case.
-        measure {
+        self.measure {
             // Put the code you want to measure the time of here.
         }
     }

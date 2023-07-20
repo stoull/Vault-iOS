@@ -18,6 +18,8 @@
 		0AA8CF532A677F9E00A2F6F1 /* VaultTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA8CF522A677F9E00A2F6F1 /* VaultTests.swift */; };
 		0AA8CF5D2A677F9E00A2F6F1 /* VaultUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA8CF5C2A677F9E00A2F6F1 /* VaultUITests.swift */; };
 		0AA8CF5F2A677F9E00A2F6F1 /* VaultUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA8CF5E2A677F9E00A2F6F1 /* VaultUITestsLaunchTests.swift */; };
+		0AC856442A6932BB00C1A6B5 /* CombineExamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC856432A6932BB00C1A6B5 /* CombineExamples.swift */; };
+		0AC856462A6954D100C1A6B5 /* VTMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC856452A6954D100C1A6B5 /* VTMovie.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +67,8 @@
 		0AA8CF582A677F9E00A2F6F1 /* VaultUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VaultUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AA8CF5C2A677F9E00A2F6F1 /* VaultUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaultUITests.swift; sourceTree = "<group>"; };
 		0AA8CF5E2A677F9E00A2F6F1 /* VaultUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaultUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0AC856432A6932BB00C1A6B5 /* CombineExamples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineExamples.swift; sourceTree = "<group>"; };
+		0AC856452A6954D100C1A6B5 /* VTMovie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTMovie.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,10 +131,12 @@
 		0AA8CF402A677F9A00A2F6F1 /* Vault */ = {
 			isa = PBXGroup;
 			children = (
+				0AC856432A6932BB00C1A6B5 /* CombineExamples.swift */,
 				0AA8CF412A677F9A00A2F6F1 /* VaultApp.swift */,
 				0AA8CF432A677F9A00A2F6F1 /* ContentView.swift */,
 				0AA8CF452A677F9E00A2F6F1 /* Assets.xcassets */,
 				0AA8CF472A677F9E00A2F6F1 /* Preview Content */,
+				0AC856452A6954D100C1A6B5 /* VTMovie.swift */,
 			);
 			path = Vault;
 			sourceTree = "<group>";
@@ -291,7 +297,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AC856442A6932BB00C1A6B5 /* CombineExamples.swift in Sources */,
 				0AA8CF442A677F9A00A2F6F1 /* ContentView.swift in Sources */,
+				0AC856462A6954D100C1A6B5 /* VTMovie.swift in Sources */,
 				0AA8CF422A677F9A00A2F6F1 /* VaultApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

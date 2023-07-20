@@ -16,6 +16,16 @@ struct ContentView: View {
             Text("Vault-all for movies")
         }
         .padding()
+        .onAppear {
+            testCombineSubscription()
+            testCombineSubject()
+            
+            _ = VTMovieStore.shared.searchMovies(keywords: "音乐").sink { (completion) in
+                print("搜索音乐 completion: \(completion)")
+            } receiveValue: { searchResponse in
+                print("searchResponse: \(searchResponse)")
+            }
+        }
     }
 }
 

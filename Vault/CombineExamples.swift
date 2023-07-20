@@ -20,7 +20,7 @@ func testCombineSubscription() {
     } receiveValue: { result in
         print("recevieValue:\(result)")
     }
-        let subscription = myListPublisher.subscribe(subcriber)
+    myListPublisher.subscribe(subcriber)
 //
 //        let subscriber2 = myListPublisher.sink { completion in
 //            print("subscriber2 completion: \(completion) ")
@@ -88,12 +88,12 @@ class VTMovieStore {
     public static let shared = VTMovieStore()
     
     func getUrl(keywords: String) -> String {
-        return "http://192.168.1.200:5000/api/v1/movies/search?keywords=b"
+        return "http://192.168.0.100:5501/api/v1/movies/search?keywords=\(keywords)"
     }
     
-    func searchMovies(keywords: String) -> AnyPublisher<VTAPIMovieResponse, VTAPIError> {
+    func searchMovies(keywords: String) -> AnyPublisher<[VTMovie], VTAPIError> {
         guard let url = URL(string: self.getUrl(keywords: keywords)) else {
-            let subject = PassthroughSubject<VTAPIMovieResponse, VTAPIError>()
+            let subject = PassthroughSubject<[VTMovie], VTAPIError>()
             subject.send(completion: .failure(.urlError(URLError(.unsupportedURL))))
             return subject.eraseToAnyPublisher()
         }
@@ -105,7 +105,7 @@ class VTMovieStore {
                 }
                 return data
             }
-            .decode(type: VTAPIMovieResponse.self, decoder: JSONDecoder())
+            .decode(type: [VTMovie].self, decoder: JSONDecoder())
             .mapError { error -> VTAPIError in
                 switch error {
                 case let urlError as URLError:
@@ -124,3 +124,4 @@ class VTMovieStore {
 
 // https://www.infoq.cn/article/eaq01u5jevuvqfghlqbs
 // https://github.com/Kilo-Loco/content/tree/main/apple/swiftui-life-cycle
+// https://developer.apple.com/documentation/foundation/urlsession/processing_url_session_data_task_results_with_combine

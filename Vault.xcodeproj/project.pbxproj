@@ -69,6 +69,7 @@
 		0AA8CF5E2A677F9E00A2F6F1 /* VaultUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaultUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		0AC856432A6932BB00C1A6B5 /* CombineExamples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineExamples.swift; sourceTree = "<group>"; };
 		0AC856452A6954D100C1A6B5 /* VTMovie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTMovie.swift; sourceTree = "<group>"; };
+		C94EB6392A697399005D67C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +132,7 @@
 		0AA8CF402A677F9A00A2F6F1 /* Vault */ = {
 			isa = PBXGroup;
 			children = (
+				C94EB6392A697399005D67C7 /* Info.plist */,
 				0AC856432A6932BB00C1A6B5 /* CombineExamples.swift */,
 				0AA8CF412A677F9A00A2F6F1 /* VaultApp.swift */,
 				0AA8CF432A677F9A00A2F6F1 /* ContentView.swift */,
@@ -462,6 +464,7 @@
 				DEVELOPMENT_TEAM = ZXPXG49X5L;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Vault/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -492,6 +495,7 @@
 				DEVELOPMENT_TEAM = ZXPXG49X5L;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Vault/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

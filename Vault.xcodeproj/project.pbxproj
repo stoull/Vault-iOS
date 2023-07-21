@@ -20,6 +20,8 @@
 		0AA8CF5F2A677F9E00A2F6F1 /* VaultUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA8CF5E2A677F9E00A2F6F1 /* VaultUITestsLaunchTests.swift */; };
 		0AC856442A6932BB00C1A6B5 /* CombineExamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC856432A6932BB00C1A6B5 /* CombineExamples.swift */; };
 		0AC856462A6954D100C1A6B5 /* VTMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC856452A6954D100C1A6B5 /* VTMovie.swift */; };
+		0AC856482A6A11D600C1A6B5 /* VTMovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC856472A6A11D600C1A6B5 /* VTMovieCell.swift */; };
+		0AC8564A2A6A123100C1A6B5 /* VTMovieIconImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC856492A6A123100C1A6B5 /* VTMovieIconImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +71,8 @@
 		0AA8CF5E2A677F9E00A2F6F1 /* VaultUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaultUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		0AC856432A6932BB00C1A6B5 /* CombineExamples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineExamples.swift; sourceTree = "<group>"; };
 		0AC856452A6954D100C1A6B5 /* VTMovie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTMovie.swift; sourceTree = "<group>"; };
+		0AC856472A6A11D600C1A6B5 /* VTMovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTMovieCell.swift; sourceTree = "<group>"; };
+		0AC856492A6A123100C1A6B5 /* VTMovieIconImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTMovieIconImage.swift; sourceTree = "<group>"; };
 		C94EB6392A697399005D67C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -136,6 +140,8 @@
 				0AC856432A6932BB00C1A6B5 /* CombineExamples.swift */,
 				0AA8CF412A677F9A00A2F6F1 /* VaultApp.swift */,
 				0AA8CF432A677F9A00A2F6F1 /* ContentView.swift */,
+				0AC856472A6A11D600C1A6B5 /* VTMovieCell.swift */,
+				0AC856492A6A123100C1A6B5 /* VTMovieIconImage.swift */,
 				0AA8CF452A677F9E00A2F6F1 /* Assets.xcassets */,
 				0AA8CF472A677F9E00A2F6F1 /* Preview Content */,
 				0AC856452A6954D100C1A6B5 /* VTMovie.swift */,
@@ -301,6 +307,8 @@
 			files = (
 				0AC856442A6932BB00C1A6B5 /* CombineExamples.swift in Sources */,
 				0AA8CF442A677F9A00A2F6F1 /* ContentView.swift in Sources */,
+				0AC8564A2A6A123100C1A6B5 /* VTMovieIconImage.swift in Sources */,
+				0AC856482A6A11D600C1A6B5 /* VTMovieCell.swift in Sources */,
 				0AC856462A6954D100C1A6B5 /* VTMovie.swift in Sources */,
 				0AA8CF422A677F9A00A2F6F1 /* VaultApp.swift in Sources */,
 			);

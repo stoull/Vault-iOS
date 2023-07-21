@@ -10,38 +10,49 @@ import Combine
 
 struct ContentView: View {
     @State private var keywords: String = ""
+    @State private var movies:[VTMovie] = []
+    
     var body: some View {
-        VStack {
-            Image(systemName: "play.tv")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Vault-all for movies")
-            HStack {
-                TextField(
-                        "输入关键字",
-                        text: $keywords
-                )
-                
-                Button {
-                    print("search : \(keywords)")
-                    
-                    self.searchMovie(keywords: keywords)
-                } label: {
-                    Text("Search")
+        NavigationView {
+            ScrollView {
+                VStack {
+                    Image(systemName: "play.tv")
+                        .imageScale(.large)
+                        .foregroundColor(.accentColor)
+                    Text("Vault-all for movies")
+                    HStack {
+                        TextField(
+                                "输入关键字",
+                                text: $keywords
+                        )
+                        
+                        Button {
+                            print("search : \(keywords)")
+                            
+                            self.searchMovie(keywords: keywords)
+                        } label: {
+                            Text("Search")
+                        }
+                    }
                 }
+                .padding()
+                
+                List {
+//                    ForEach
+                }
+                .navigationTitle("Vault")
             }
-        }
-        .padding()
-        .onAppear {
-//            testCombineSubscription()
-//            testCombineSubject()
+            .onAppear() {
+                //            testCombineSubscription()
+                //            testCombineSubject()
+            }
             
         }
     }
     
     func searchMovie(keywords: String) {
         guard keywords.count > 0 else { return }
-        _ = VTMovieStore.shared.searchMovies(keywords: keywords).sink(receiveCompletion: { completion in
+        VTMovieStore.shared.searchMovies(keywords: keywords).sink(receiveCompletion: { completion in
             print("搜索: \(keywords) completion: \(completion)")
         }, receiveValue: { searchResponse in
             print("searchResponse: \(searchResponse)")

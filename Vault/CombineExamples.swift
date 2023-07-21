@@ -88,7 +88,7 @@ class VTMovieStore {
     public static let shared = VTMovieStore()
     
     func getUrl(keywords: String) -> String {
-        return "http://192.168.0.100:5501/api/v1/movies/search?keywords=\(keywords)"
+        return "http://192.168.1.200:5000/api/v1/movies/search?keywords=\(keywords)"
     }
     
     func searchMovies(keywords: String) -> AnyPublisher<[VTMovie], VTAPIError> {
@@ -120,8 +120,38 @@ class VTMovieStore {
             }
             .eraseToAnyPublisher()
     }
+    
+    func loadImage(urlString: String) -> AnyPublisher<Data, VTAPIError> {
+        guard let url = URL(string: urlString) else {
+            let subject = PassthroughSubject<Data, VTAPIError>()
+            subject.send(completion: .failure(.urlError(URLError(.unsupportedURL))))
+            return subject.eraseToAnyPublisher()
+        }
+        
+        return URLSession.shared.dataTaskPublisher(for: url)
+            .tryMap { (data, response) -> Data in
+                guard let httpResponse = response as? HTTPURLResponse, 200...299 ~= httpResponse.statusCode else {
+                    throw VTAPIError.responseError((response as? HTTPURLResponse)?.statusCode ?? 500)
+                }
+                return data
+            }
+            .mapError { error -> VTAPIError in
+                switch error {
+                case let urlError as URLError:
+                    return VTAPIError.urlError(urlError)
+                case let decodingError as DecodingError:
+                    return VTAPIError.decodingError(decodingError)
+                case let apiError as VTAPIError:
+                    return apiError
+                default:
+                    return VTAPIError.genericError
+                }
+            }
+            .eraseToAnyPublisher()
+    }
 }
 
 // https://www.infoq.cn/article/eaq01u5jevuvqfghlqbs
 // https://github.com/Kilo-Loco/content/tree/main/apple/swiftui-life-cycle
 // https://developer.apple.com/documentation/foundation/urlsession/processing_url_session_data_task_results_with_combine
+// https://github.com/shankarmadeshvaran/Movie_Trailers_SwiftUI

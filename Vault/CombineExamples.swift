@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 import Combine
 
 var subscriptions = Set<AnyCancellable>()
@@ -88,7 +89,7 @@ class VTMovieStore {
     public static let shared = VTMovieStore()
     
     func getUrl(keywords: String) -> String {
-        return "http://192.168.1.200:5000/api/v1/movies/search?keywords=\(keywords)"
+        return "http://192.168.0.101:5001/api/v1/movies/search?keywords=\(keywords)"
     }
     
     func searchMovies(keywords: String) -> AnyPublisher<[VTMovie], VTAPIError> {
@@ -121,19 +122,19 @@ class VTMovieStore {
             .eraseToAnyPublisher()
     }
     
-    func loadImage(urlString: String) -> AnyPublisher<Data, VTAPIError> {
+    func loadImage(urlString: String) -> AnyPublisher<Image, VTAPIError> {
         guard let url = URL(string: urlString) else {
-            let subject = PassthroughSubject<Data, VTAPIError>()
+            let subject = PassthroughSubject<Image, VTAPIError>()
             subject.send(completion: .failure(.urlError(URLError(.unsupportedURL))))
             return subject.eraseToAnyPublisher()
         }
         
         return URLSession.shared.dataTaskPublisher(for: url)
-            .tryMap { (data, response) -> Data in
+            .tryMap { (data, response) -> Image in
                 guard let httpResponse = response as? HTTPURLResponse, 200...299 ~= httpResponse.statusCode else {
                     throw VTAPIError.responseError((response as? HTTPURLResponse)?.statusCode ?? 500)
                 }
-                return data
+                return VTTools.createImage(data)
             }
             .mapError { error -> VTAPIError in
                 switch error {

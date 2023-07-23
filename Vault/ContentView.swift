@@ -14,7 +14,7 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView {
-            ScrollView {
+            List {
                 VStack {
                     Image(systemName: "play.tv")
                         .imageScale(.large)
@@ -34,14 +34,14 @@ struct ContentView: View {
                             Text("Search")
                         }
                     }
+                    
                 }
                 .padding()
                 
-                List {
-//                    ForEach
-                }
-                .navigationTitle("Vault")
+                VTMovieRow()
+                
             }
+            .navigationTitle("Vault")
             .onAppear() {
                 //            testCombineSubscription()
                 //            testCombineSubject()
@@ -61,8 +61,8 @@ struct ContentView: View {
     }
 }
 
-//struct ContentView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        ContentView()
-//    }
-//}
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
+}

@@ -38,8 +38,13 @@ struct ContentView: View {
                 }
                 .padding()
                 
-                VTMovieRow()
-                
+                ForEach(movies) { movie in
+                    NavigationLink {
+                        VTMovieDetail(movie: movie)
+                    } label: {
+                        Text(movie.name)
+                    }
+                }
             }
             .navigationTitle("Vault")
             .onAppear() {
@@ -54,8 +59,9 @@ struct ContentView: View {
         guard keywords.count > 0 else { return }
         VTMovieStore.shared.searchMovies(keywords: keywords).sink(receiveCompletion: { completion in
             print("搜索: \(keywords) completion: \(completion)")
-        }, receiveValue: { searchResponse in
-            print("searchResponse: \(searchResponse)")
+        }, receiveValue: { searchResult in
+            movies = searchResult
+            print("searchResponse: \(searchResult)")
         })
         .store(in: &subscriptions)
     }

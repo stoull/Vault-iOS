@@ -11,6 +11,24 @@
 		0A2436FD2A678D6B00A1F442 /* Alamofire.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0A2436FA2A678D6A00A1F442 /* Alamofire.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0A2436FE2A678D6B00A1F442 /* SwiftyJSON.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A2436FB2A678D6A00A1F442 /* SwiftyJSON.xcframework */; };
 		0A2436FF2A678D6B00A1F442 /* SwiftyJSON.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0A2436FB2A678D6A00A1F442 /* SwiftyJSON.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0A7410BD2A6E1A08008260EE /* VTAsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7410BC2A6E1A08008260EE /* VTAsyncImage.swift */; };
+		0A7410BF2A6E1A18008260EE /* VTImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7410BE2A6E1A18008260EE /* VTImageLoader.swift */; };
+		0A7410C12A6E1A71008260EE /* EnvironmentValues+ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7410C02A6E1A71008260EE /* EnvironmentValues+ImageCache.swift */; };
+		0A7410C32A6E1AED008260EE /* VTImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7410C22A6E1AED008260EE /* VTImageCache.swift */; };
+		0A7410C52A6E20BA008260EE /* VTAPIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7410C42A6E20BA008260EE /* VTAPIError.swift */; };
+		0A7410C72A6E48CF008260EE /* VTMovieDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7410C62A6E48CF008260EE /* VTMovieDetail.swift */; };
+		0A7410CE2A6E528C008260EE /* VTAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7410CD2A6E528C008260EE /* VTAPI.swift */; };
+		0A7410D02A6E52A7008260EE /* VTRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7410CF2A6E52A7008260EE /* VTRouter.swift */; };
+		0A7410D22A6E5363008260EE /* VTReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7410D12A6E5363008260EE /* VTReachability.swift */; };
+		0A7410D42A6E5418008260EE /* VTNetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7410D32A6E5418008260EE /* VTNetworkHelper.swift */; };
+		0A7410D62A6E5538008260EE /* VTNetworkLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7410D52A6E5538008260EE /* VTNetworkLogger.swift */; };
+		0A7410D82A6E5581008260EE /* VTURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7410D72A6E5581008260EE /* VTURLSession.swift */; };
+		0A7410DA2A6E55FB008260EE /* VTRequestInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7410D92A6E55FB008260EE /* VTRequestInterceptor.swift */; };
+		0A7410DD2A6E564A008260EE /* VTCookieHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7410DC2A6E564A008260EE /* VTCookieHandler.swift */; };
+		0A7410DF2A6E57B1008260EE /* VTResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7410DE2A6E57B1008260EE /* VTResponse.swift */; };
+		0A7410E12A6E59B0008260EE /* VTResponseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7410E02A6E59B0008260EE /* VTResponseProtocol.swift */; };
+		0A7410E32A6E5A2C008260EE /* VTResponseCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7410E22A6E5A2C008260EE /* VTResponseCode.swift */; };
+		0A7410E52A6E5BAD008260EE /* VTAPIDataCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7410E42A6E5BAD008260EE /* VTAPIDataCache.swift */; };
 		0AA8CF422A677F9A00A2F6F1 /* VaultApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA8CF412A677F9A00A2F6F1 /* VaultApp.swift */; };
 		0AA8CF442A677F9A00A2F6F1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA8CF432A677F9A00A2F6F1 /* ContentView.swift */; };
 		0AA8CF462A677F9E00A2F6F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AA8CF452A677F9E00A2F6F1 /* Assets.xcassets */; };
@@ -60,6 +78,24 @@
 /* Begin PBXFileReference section */
 		0A2436FA2A678D6A00A1F442 /* Alamofire.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Alamofire.xcframework; path = Carthage/Build/Alamofire.xcframework; sourceTree = "<group>"; };
 		0A2436FB2A678D6A00A1F442 /* SwiftyJSON.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SwiftyJSON.xcframework; path = Carthage/Build/SwiftyJSON.xcframework; sourceTree = "<group>"; };
+		0A7410BC2A6E1A08008260EE /* VTAsyncImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTAsyncImage.swift; sourceTree = "<group>"; };
+		0A7410BE2A6E1A18008260EE /* VTImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTImageLoader.swift; sourceTree = "<group>"; };
+		0A7410C02A6E1A71008260EE /* EnvironmentValues+ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EnvironmentValues+ImageCache.swift"; sourceTree = "<group>"; };
+		0A7410C22A6E1AED008260EE /* VTImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTImageCache.swift; sourceTree = "<group>"; };
+		0A7410C42A6E20BA008260EE /* VTAPIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTAPIError.swift; sourceTree = "<group>"; };
+		0A7410C62A6E48CF008260EE /* VTMovieDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTMovieDetail.swift; sourceTree = "<group>"; };
+		0A7410CD2A6E528C008260EE /* VTAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTAPI.swift; sourceTree = "<group>"; };
+		0A7410CF2A6E52A7008260EE /* VTRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTRouter.swift; sourceTree = "<group>"; };
+		0A7410D12A6E5363008260EE /* VTReachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTReachability.swift; sourceTree = "<group>"; };
+		0A7410D32A6E5418008260EE /* VTNetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTNetworkHelper.swift; sourceTree = "<group>"; };
+		0A7410D52A6E5538008260EE /* VTNetworkLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTNetworkLogger.swift; sourceTree = "<group>"; };
+		0A7410D72A6E5581008260EE /* VTURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTURLSession.swift; sourceTree = "<group>"; };
+		0A7410D92A6E55FB008260EE /* VTRequestInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTRequestInterceptor.swift; sourceTree = "<group>"; };
+		0A7410DC2A6E564A008260EE /* VTCookieHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTCookieHandler.swift; sourceTree = "<group>"; };
+		0A7410DE2A6E57B1008260EE /* VTResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTResponse.swift; sourceTree = "<group>"; };
+		0A7410E02A6E59B0008260EE /* VTResponseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTResponseProtocol.swift; sourceTree = "<group>"; };
+		0A7410E22A6E5A2C008260EE /* VTResponseCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTResponseCode.swift; sourceTree = "<group>"; };
+		0A7410E42A6E5BAD008260EE /* VTAPIDataCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTAPIDataCache.swift; sourceTree = "<group>"; };
 		0AA8CF3E2A677F9A00A2F6F1 /* Vault.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vault.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AA8CF412A677F9A00A2F6F1 /* VaultApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaultApp.swift; sourceTree = "<group>"; };
 		0AA8CF432A677F9A00A2F6F1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -114,6 +150,43 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		0A7410BB2A6E19EF008260EE /* ImageLoader */ = {
+			isa = PBXGroup;
+			children = (
+				0A7410BC2A6E1A08008260EE /* VTAsyncImage.swift */,
+				0A7410BE2A6E1A18008260EE /* VTImageLoader.swift */,
+				0A7410C02A6E1A71008260EE /* EnvironmentValues+ImageCache.swift */,
+				0A7410C22A6E1AED008260EE /* VTImageCache.swift */,
+			);
+			path = ImageLoader;
+			sourceTree = "<group>";
+		};
+		0A7410CA2A6E50FD008260EE /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				0A7410CD2A6E528C008260EE /* VTAPI.swift */,
+				0A7410CF2A6E52A7008260EE /* VTRouter.swift */,
+				0A7410E42A6E5BAD008260EE /* VTAPIDataCache.swift */,
+				0A7410E02A6E59B0008260EE /* VTResponseProtocol.swift */,
+				0A7410DE2A6E57B1008260EE /* VTResponse.swift */,
+				0A7410E22A6E5A2C008260EE /* VTResponseCode.swift */,
+				0A7410DB2A6E55FF008260EE /* Base */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		0A7410DB2A6E55FF008260EE /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				0A7410D72A6E5581008260EE /* VTURLSession.swift */,
+				0A7410D52A6E5538008260EE /* VTNetworkLogger.swift */,
+				0A7410D12A6E5363008260EE /* VTReachability.swift */,
+				0A7410D92A6E55FB008260EE /* VTRequestInterceptor.swift */,
+				0A7410DC2A6E564A008260EE /* VTCookieHandler.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 		0AA8CF352A677F9A00A2F6F1 = {
 			isa = PBXGroup;
 			children = (
@@ -138,11 +211,15 @@
 		0AA8CF402A677F9A00A2F6F1 /* Vault */ = {
 			isa = PBXGroup;
 			children = (
-				C998DF0A2A6C1702002F80D3 /* ImageLoader */,
+				0A7410C42A6E20BA008260EE /* VTAPIError.swift */,
+				0A7410D32A6E5418008260EE /* VTNetworkHelper.swift */,
+				0A7410CA2A6E50FD008260EE /* Network */,
+				0A7410BB2A6E19EF008260EE /* ImageLoader */,
 				C94EB6392A697399005D67C7 /* Info.plist */,
 				0AC856432A6932BB00C1A6B5 /* CombineExamples.swift */,
 				0AA8CF412A677F9A00A2F6F1 /* VaultApp.swift */,
 				0AA8CF432A677F9A00A2F6F1 /* ContentView.swift */,
+				0A7410C62A6E48CF008260EE /* VTMovieDetail.swift */,
 				0AC856472A6A11D600C1A6B5 /* VTMovieRow.swift */,
 				0AC856492A6A123100C1A6B5 /* VTMovieIconImage.swift */,
 				0AA8CF452A677F9E00A2F6F1 /* Assets.xcassets */,
@@ -176,13 +253,6 @@
 				0AA8CF5E2A677F9E00A2F6F1 /* VaultUITestsLaunchTests.swift */,
 			);
 			path = VaultUITests;
-			sourceTree = "<group>";
-		};
-		C998DF0A2A6C1702002F80D3 /* ImageLoader */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ImageLoader;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -316,13 +386,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A7410C72A6E48CF008260EE /* VTMovieDetail.swift in Sources */,
+				0A7410BD2A6E1A08008260EE /* VTAsyncImage.swift in Sources */,
 				0AC856442A6932BB00C1A6B5 /* CombineExamples.swift in Sources */,
 				C92FE4302A6ACF7300E3843C /* VTTools.swift in Sources */,
 				0AA8CF442A677F9A00A2F6F1 /* ContentView.swift in Sources */,
 				0AC8564A2A6A123100C1A6B5 /* VTMovieIconImage.swift in Sources */,
+				0A7410C12A6E1A71008260EE /* EnvironmentValues+ImageCache.swift in Sources */,
+				0A7410D02A6E52A7008260EE /* VTRouter.swift in Sources */,
+				0A7410C32A6E1AED008260EE /* VTImageCache.swift in Sources */,
+				0A7410E12A6E59B0008260EE /* VTResponseProtocol.swift in Sources */,
 				0AC856482A6A11D600C1A6B5 /* VTMovieRow.swift in Sources */,
+				0A7410E32A6E5A2C008260EE /* VTResponseCode.swift in Sources */,
+				0A7410D82A6E5581008260EE /* VTURLSession.swift in Sources */,
+				0A7410E52A6E5BAD008260EE /* VTAPIDataCache.swift in Sources */,
+				0A7410D22A6E5363008260EE /* VTReachability.swift in Sources */,
 				0AC856462A6954D100C1A6B5 /* VTMovie.swift in Sources */,
+				0A7410C52A6E20BA008260EE /* VTAPIError.swift in Sources */,
+				0A7410BF2A6E1A18008260EE /* VTImageLoader.swift in Sources */,
+				0A7410DA2A6E55FB008260EE /* VTRequestInterceptor.swift in Sources */,
+				0A7410DD2A6E564A008260EE /* VTCookieHandler.swift in Sources */,
 				0AA8CF422A677F9A00A2F6F1 /* VaultApp.swift in Sources */,
+				0A7410DF2A6E57B1008260EE /* VTResponse.swift in Sources */,
+				0A7410CE2A6E528C008260EE /* VTAPI.swift in Sources */,
+				0A7410D62A6E5538008260EE /* VTNetworkLogger.swift in Sources */,
+				0A7410D42A6E5418008260EE /* VTNetworkHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,14 +8,20 @@
 import SwiftUI
 
 struct VTMovieRow: View {
+    var movie: VTMovie
+    
     var body: some View {
         HStack {
-            VTMovieIconImage(imageName: "p2308392633.jpg")
-                .padding(.leading)
+            if let posterName = movie.poster_name {
+                VTMovieIconImage<Text>(imageName: posterName)
+                    .padding(.leading)
+            }
             VStack {
-                Text("name")
+                Text(movie.name)
                     .fontWeight(.heavy)
-                Text("detail")
+                if let syno = movie.synopsis {
+                    Text(syno)
+                }
             }
             Spacer()
         }
@@ -25,6 +31,6 @@ struct VTMovieRow: View {
 
 struct VTMovieCell_Previews: PreviewProvider {
     static var previews: some View {
-        VTMovieRow()
+        VTMovieRow(movie: VTMovie.sampleMovie())
     }
 }

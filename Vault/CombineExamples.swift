@@ -57,28 +57,6 @@ func testCombineSubject() {
 
 }
 
-
-/// Operators
-enum VTAPIError: Error, LocalizedError {
-    case urlError(URLError)
-    case responseError(Int)
-    case decodingError(DecodingError)
-    case genericError
-    
-    var localizedDescribiption: String {
-        switch self {
-        case .urlError(let error):
-            return error.localizedDescription
-        case .decodingError(let error):
-            return error.localizedDescription
-        case .responseError(let status):
-            return "Bad response code: \(status)"
-        case .genericError:
-            return "An unknown error has been occured"
-        }
-    }
-}
-
 struct VTAPIMovieResponse: Codable {
     var result: Int = 0
     var message: String?
@@ -88,12 +66,29 @@ struct VTAPIMovieResponse: Codable {
 class VTMovieStore {
     public static let shared = VTMovieStore()
     
-    func getUrl(keywords: String) -> String {
-        return "http://192.168.0.101:5001/api/v1/movies/search?keywords=\(keywords)"
+    func getUrl(keywords: String) throws -> URL {
+        let root = "http://192.168.2.53:5000"
+        let path = "/api/v1/movies/search"
+
+        guard var components = URLComponents(string: root) else {
+            throw VTAPIError.urlError(URLError(.unsupportedURL))
+        }
+        components.path = path
+        var queryItems:[URLQueryItem] = components.queryItems ?? []
+        let keywordsItem = URLQueryItem(name: "keywords", value: keywords)
+        queryItems.append(keywordsItem)
+        
+        components.queryItems = queryItems
+        
+        guard let rUrl = components.url else {
+            throw VTAPIError.urlError(URLError(.unsupportedURL))
+        }
+        return rUrl
     }
     
     func searchMovies(keywords: String) -> AnyPublisher<[VTMovie], VTAPIError> {
-        guard let url = URL(string: self.getUrl(keywords: keywords)) else {
+        
+        guard let url = try? getUrl(keywords: keywords) else {
             let subject = PassthroughSubject<[VTMovie], VTAPIError>()
             subject.send(completion: .failure(.urlError(URLError(.unsupportedURL))))
             return subject.eraseToAnyPublisher()

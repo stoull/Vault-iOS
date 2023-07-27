@@ -8,6 +8,13 @@
 import Foundation
 import SwiftUI
 
+extension UIApplication {
+    /// 结束编辑
+    func endEditing() {
+        sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+    }
+}
+
 struct VTTools {
     // data 转image
     static func createImage(_ value: Data) -> Image {

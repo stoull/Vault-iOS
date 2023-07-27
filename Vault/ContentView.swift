@@ -11,6 +11,9 @@ import Combine
 struct ContentView: View {
     @State private var keywords: String = ""
     @State private var movies:[VTMovie] = []
+    @State private var isHideLoader: Bool = true
+    @State private var isShowErrorAlert: Bool = false
+    @State private var errorAlertMessage: String = ""
     
     var body: some View {
         NavigationView {
@@ -24,17 +27,22 @@ struct ContentView: View {
                         TextField(
                                 "输入关键字",
                                 text: $keywords
-                        )
+                        ){
+                            // Called when the user tap the return button
+                            startSearch()
+                        }
+                        
+                        VTLoaderView(tintColor: .blue, scaleSize: 1.0)
+                            .padding()
+                            .hidden(isHideLoader)
                         
                         Button {
-                            print("search : \(keywords)")
-                            
-                            self.searchMovie(keywords: keywords)
+                            print("search keywords : \(keywords)")
+                            startSearch()
                         } label: {
                             Text("Search")
                         }
                     }
-                    
                 }
                 .padding()
                 
@@ -44,6 +52,7 @@ struct ContentView: View {
                     } label: {
                         Text(movie.name)
                     }
+                    .frame(height: 44)
                 }
             }
             .navigationTitle("Vault")
@@ -51,17 +60,40 @@ struct ContentView: View {
                 //            testCombineSubscription()
                 //            testCombineSubject()
             }
-            
+            .gesture(DragGesture().onChanged { _ in
+                UIApplication.shared.endEditing()
+            })
+            .alert(isPresented: $isShowErrorAlert) {
+                Alert(title: Text("Not found!"),
+                      message: Text(errorAlertMessage),
+                      dismissButton: .default(Text("Okay"), action: {}))
+            }
         }
     }
     
-    func searchMovie(keywords: String) {
+    func startSearch() {
         guard keywords.count > 0 else { return }
+        UIApplication.shared.endEditing()
+        self.searchMovie(keywords: keywords)
+    }
+    
+    func searchMovie(keywords: String) {
+        isHideLoader = false
         VTMovieStore.shared.searchMovies(keywords: keywords).sink(receiveCompletion: { completion in
+            
+            isHideLoader = true
+            switch completion {
+            case .finished:
+                ()
+            case .failure(let error):
+                errorAlertMessage = error.localizedDescribiption
+                isShowErrorAlert = true
+            }
+            
             print("搜索: \(keywords) completion: \(completion)")
         }, receiveValue: { searchResult in
+            isHideLoader = true
             movies = searchResult
-            print("searchResponse: \(searchResult)")
         })
         .store(in: &subscriptions)
     }

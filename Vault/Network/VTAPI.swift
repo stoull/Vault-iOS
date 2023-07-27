@@ -15,29 +15,29 @@ final class VTAPI: SessionDelegate {
     var reachability = try? VTReachability()
     
     
-    private func fetch<T: Decodable>(_ urlRequest: URLRequestConvertible) -> AnyPublisher<T, AFError> {
-        AF.request(urlRequest)
-            .validate()
-            .publishDecodable(type: VTResponse.self, decoder: JSONDecoder())
-            .value()
-//            .receive(on: DispatchQueue.main)
+//    private func fetch<T: Decodable>(_ urlRequest: URLRequestConvertible) -> AnyPublisher<T, AFError> {
+//        AF.request(urlRequest)
+//            .validate()
+//            .publishDecodable(type: VTResponse.self, decoder: JSONDecoder())
+//            .value()
+////            .receive(on: DispatchQueue.main)
+////            .eraseToAnyPublisher()
+//            .tryMap { vtRes -> Data in
+//                return vtRes.data?.rawData() ?? Data()
+//            }
+//            .decode(type: T.self, decoder: JSONDecoder())
+//            .mapError { error -> VTAPIError in
+//                switch error {
+//                case let urlError as URLError:
+//                    return VTAPIError.urlError(urlError)
+//                case let decodingError as DecodingError:
+//                    return VTAPIError.decodingError(decodingError)
+//                case let apiError as VTAPIError:
+//                    return apiError
+//                default:
+//                    return VTAPIError.genericError
+//                }
+//            }
 //            .eraseToAnyPublisher()
-            .tryMap { vtRes -> Data in
-                return vtRes.data?.rawData() ?? Data()
-            }
-            .decode(type: T.self, decoder: JSONDecoder())
-            .mapError { error -> VTAPIError in
-                switch error {
-                case let urlError as URLError:
-                    return VTAPIError.urlError(urlError)
-                case let decodingError as DecodingError:
-                    return VTAPIError.decodingError(decodingError)
-                case let apiError as VTAPIError:
-                    return apiError
-                default:
-                    return VTAPIError.genericError
-                }
-            }
-            .eraseToAnyPublisher()
-    }
+//    }
 }

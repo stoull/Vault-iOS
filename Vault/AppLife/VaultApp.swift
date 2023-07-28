@@ -19,7 +19,7 @@ struct VaultApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            VTHomeView()
                 .onOpenURL { url in
                     // handler Universal Links and NSUserActivity
                 openAppURL(url: url)

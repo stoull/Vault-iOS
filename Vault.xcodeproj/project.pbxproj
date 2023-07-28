@@ -16,6 +16,7 @@
 		0A5037FF2A72A09E00E4F51D /* VTLoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5037FE2A72A09E00E4F51D /* VTLoaderView.swift */; };
 		0A73A6682A737C6200155EBC /* VTAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A73A6672A737C6200155EBC /* VTAppDelegate.swift */; };
 		0A73A66A2A737CDB00155EBC /* VTSceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A73A6692A737CDB00155EBC /* VTSceneDelegate.swift */; };
+		0A73A66E2A73900D00155EBC /* VTColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A73A66D2A73900D00155EBC /* VTColor.swift */; };
 		0A7410BD2A6E1A08008260EE /* VTAsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7410BC2A6E1A08008260EE /* VTAsyncImage.swift */; };
 		0A7410BF2A6E1A18008260EE /* VTImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7410BE2A6E1A18008260EE /* VTImageLoader.swift */; };
 		0A7410C12A6E1A71008260EE /* EnvironmentValues+ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7410C02A6E1A71008260EE /* EnvironmentValues+ImageCache.swift */; };
@@ -35,7 +36,7 @@
 		0A7410E32A6E5A2C008260EE /* VTResponseCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7410E22A6E5A2C008260EE /* VTResponseCode.swift */; };
 		0A7410E52A6E5BAD008260EE /* VTAPIDataCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7410E42A6E5BAD008260EE /* VTAPIDataCache.swift */; };
 		0AA8CF422A677F9A00A2F6F1 /* VaultApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA8CF412A677F9A00A2F6F1 /* VaultApp.swift */; };
-		0AA8CF442A677F9A00A2F6F1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA8CF432A677F9A00A2F6F1 /* ContentView.swift */; };
+		0AA8CF442A677F9A00A2F6F1 /* VTHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA8CF432A677F9A00A2F6F1 /* VTHomeView.swift */; };
 		0AA8CF462A677F9E00A2F6F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AA8CF452A677F9E00A2F6F1 /* Assets.xcassets */; };
 		0AA8CF492A677F9E00A2F6F1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AA8CF482A677F9E00A2F6F1 /* Preview Assets.xcassets */; };
 		0AA8CF532A677F9E00A2F6F1 /* VaultTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA8CF522A677F9E00A2F6F1 /* VaultTests.swift */; };
@@ -88,6 +89,7 @@
 		0A5037FE2A72A09E00E4F51D /* VTLoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTLoaderView.swift; sourceTree = "<group>"; };
 		0A73A6672A737C6200155EBC /* VTAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTAppDelegate.swift; sourceTree = "<group>"; };
 		0A73A6692A737CDB00155EBC /* VTSceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTSceneDelegate.swift; sourceTree = "<group>"; };
+		0A73A66D2A73900D00155EBC /* VTColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTColor.swift; sourceTree = "<group>"; };
 		0A7410BC2A6E1A08008260EE /* VTAsyncImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTAsyncImage.swift; sourceTree = "<group>"; };
 		0A7410BE2A6E1A18008260EE /* VTImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTImageLoader.swift; sourceTree = "<group>"; };
 		0A7410C02A6E1A71008260EE /* EnvironmentValues+ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EnvironmentValues+ImageCache.swift"; sourceTree = "<group>"; };
@@ -108,7 +110,7 @@
 		0A7410E42A6E5BAD008260EE /* VTAPIDataCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTAPIDataCache.swift; sourceTree = "<group>"; };
 		0AA8CF3E2A677F9A00A2F6F1 /* Vault.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vault.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AA8CF412A677F9A00A2F6F1 /* VaultApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaultApp.swift; sourceTree = "<group>"; };
-		0AA8CF432A677F9A00A2F6F1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0AA8CF432A677F9A00A2F6F1 /* VTHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTHomeView.swift; sourceTree = "<group>"; };
 		0AA8CF452A677F9E00A2F6F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0AA8CF482A677F9E00A2F6F1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0AA8CF4E2A677F9E00A2F6F1 /* VaultTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VaultTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -184,6 +186,7 @@
 				0AC856452A6954D100C1A6B5 /* VTMovie.swift */,
 				C92FE42F2A6ACF7300E3843C /* VTTools.swift */,
 				0A5037FC2A7297BC00E4F51D /* VTMovieStore.swift */,
+				0A73A66D2A73900D00155EBC /* VTColor.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -257,7 +260,7 @@
 				0A7410CA2A6E50FD008260EE /* Network */,
 				0A7410BB2A6E19EF008260EE /* ImageLoader */,
 				0A73A66C2A737E4A00155EBC /* Models */,
-				0AA8CF432A677F9A00A2F6F1 /* ContentView.swift */,
+				0AA8CF432A677F9A00A2F6F1 /* VTHomeView.swift */,
 				0A7410C62A6E48CF008260EE /* VTMovieDetail.swift */,
 				0AC856472A6A11D600C1A6B5 /* VTMovieRow.swift */,
 				0AC856492A6A123100C1A6B5 /* VTMovieIconImage.swift */,
@@ -430,7 +433,7 @@
 				0AC856442A6932BB00C1A6B5 /* CombineExamples.swift in Sources */,
 				0A73A66A2A737CDB00155EBC /* VTSceneDelegate.swift in Sources */,
 				C92FE4302A6ACF7300E3843C /* VTTools.swift in Sources */,
-				0AA8CF442A677F9A00A2F6F1 /* ContentView.swift in Sources */,
+				0AA8CF442A677F9A00A2F6F1 /* VTHomeView.swift in Sources */,
 				0AC8564A2A6A123100C1A6B5 /* VTMovieIconImage.swift in Sources */,
 				0A7410C12A6E1A71008260EE /* EnvironmentValues+ImageCache.swift in Sources */,
 				0A7410D02A6E52A7008260EE /* VTRouter.swift in Sources */,
@@ -453,6 +456,7 @@
 				0AA8CF422A677F9A00A2F6F1 /* VaultApp.swift in Sources */,
 				0A7410DF2A6E57B1008260EE /* VTResponse.swift in Sources */,
 				0A7410CE2A6E528C008260EE /* VTAPI.swift in Sources */,
+				0A73A66E2A73900D00155EBC /* VTColor.swift in Sources */,
 				0A7410D62A6E5538008260EE /* VTNetworkLogger.swift in Sources */,
 				0A7410D42A6E5418008260EE /* VTNetworkHelper.swift in Sources */,
 			);

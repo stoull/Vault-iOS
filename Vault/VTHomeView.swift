@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  VTHomeView.swift
 //  Vault
 //
 //  Created by Kevin on 2023/7/19.
@@ -8,42 +8,49 @@
 import SwiftUI
 import Combine
 
-struct ContentView: View {
+struct VTHomeView: View {
     @State private var keywords: String = ""
     @State private var movies:[VTMovie] = []
     @State private var isHideLoader: Bool = true
     @State private var isShowErrorAlert: Bool = false
     @State private var errorAlertMessage: String = ""
     
+    let backgroundGradient = LinearGradient(
+        colors: [Color(hex: "#FBEAFF"), Color(hex: "#C4FCEF")],
+        startPoint: .leading, endPoint: .trailing)
     var body: some View {
         NavigationView {
             List {
-                VStack {
+                VStack(alignment: .center) {
                     Image("vault120")
-                        .imageScale(.large)
-                        .foregroundColor(.accentColor)
                     Text("Vault-all for movies")
-                    HStack {
-                        TextField(
-                                "输入关键字",
-                                text: $keywords
-                        ){
-                            // Called when the user tap the return button
-                            startSearch()
-                        }
-                        
-                        VTLoaderView(tintColor: .blue, scaleSize: 1.0)
-                            .padding()
-                            .hidden(isHideLoader)
-                        
-                        Button {
-                            print("search keywords : \(keywords)")
-                            startSearch()
-                        } label: {
-                            Text("Search")
-                        }
-                    }
                 }
+                .frame(maxWidth: .infinity)
+                HStack {
+                    TextField(
+                            "输入关键字",
+                            text: $keywords
+                    ){
+                        // Called when the user tap the return button
+                        startSearch()
+                    }
+                    .frame(height: 40)
+                    .padding(EdgeInsets(top: 0, leading: 12, bottom: 0, trailing: 6))
+                    
+                    VTLoaderView(tintColor: .blue, scaleSize: 1.0)
+                        .padding()
+                        .hidden(isHideLoader)
+                    
+                    Button {
+                        print("search keywords : \(keywords)")
+                        startSearch()
+                    } label: {
+                        Text("Search")
+                    }
+                    .padding(.trailing, 12)
+                }
+                .background(RoundedRectangle(cornerRadius: 12, style: .continuous).fill(backgroundGradient))
+                .overlay(RoundedRectangle(cornerRadius: 12, style: .continuous).strokeBorder(Color(hex: "#C34A36"), lineWidth: 1))
                 .padding()
                 
                 ForEach(movies) { movie in
@@ -56,6 +63,12 @@ struct ContentView: View {
                 }
             }
             .navigationTitle("Vault")
+//            .toolbar {
+//                ToolbarItem(placement: .navigationBarTrailing) {
+//                    Image("vault120")
+//                }
+//            }
+            .navigationBarHidden(true)
             .onAppear() {
                 //            testCombineSubscription()
                 //            testCombineSubject()
@@ -99,8 +112,8 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct VTHomeView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        VTHomeView()
     }
 }

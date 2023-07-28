@@ -27,15 +27,30 @@ struct VTHomeView: View {
                 }
                 .frame(maxWidth: .infinity)
                 HStack {
-                    TextField(
+                    if #available(iOS 15.0, *) {
+                        TextField(
                             "输入关键字",
                             text: $keywords
-                    ){
-                        // Called when the user tap the return button
-                        startSearch()
+                        ){
+                            // Called when the user tap the return button
+                            startSearch()
+                        }
+                        .submitLabel(.search)
+                        .frame(height: 40)
+                        .padding(EdgeInsets(top: 0, leading: 12, bottom: 0, trailing: 6))
+                    } else {
+                        // Fallback on earlier versions
+                        TextField(
+                            "输入关键字",
+                            text: $keywords
+                        ){
+                            // Called when the user tap the return button
+                            startSearch()
+                        }
+                        .keyboardType(.webSearch)
+                        .frame(height: 40)
+                        .padding(EdgeInsets(top: 0, leading: 12, bottom: 0, trailing: 6))
                     }
-                    .frame(height: 40)
-                    .padding(EdgeInsets(top: 0, leading: 12, bottom: 0, trailing: 6))
                     
                     VTLoaderView(tintColor: .blue, scaleSize: 1.0)
                         .padding()
@@ -97,7 +112,10 @@ struct VTHomeView: View {
             isHideLoader = true
             switch completion {
             case .finished:
-                ()
+                if movies.count == 0 {
+                    errorAlertMessage = "the count is 0"
+                    isShowErrorAlert = true
+                }
             case .failure(let error):
                 errorAlertMessage = error.localizedDescribiption
                 isShowErrorAlert = true

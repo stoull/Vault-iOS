@@ -19,7 +19,7 @@ struct ContentView: View {
         NavigationView {
             List {
                 VStack {
-                    Image(systemName: "play.tv")
+                    Image("vault120")
                         .imageScale(.large)
                         .foregroundColor(.accentColor)
                     Text("Vault-all for movies")

@@ -14,6 +14,8 @@
 		0A5037FB2A7295AC00E4F51D /* VTHostManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5037FA2A7295AC00E4F51D /* VTHostManager.swift */; };
 		0A5037FD2A7297BC00E4F51D /* VTMovieStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5037FC2A7297BC00E4F51D /* VTMovieStore.swift */; };
 		0A5037FF2A72A09E00E4F51D /* VTLoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5037FE2A72A09E00E4F51D /* VTLoaderView.swift */; };
+		0A73A6682A737C6200155EBC /* VTAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A73A6672A737C6200155EBC /* VTAppDelegate.swift */; };
+		0A73A66A2A737CDB00155EBC /* VTSceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A73A6692A737CDB00155EBC /* VTSceneDelegate.swift */; };
 		0A7410BD2A6E1A08008260EE /* VTAsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7410BC2A6E1A08008260EE /* VTAsyncImage.swift */; };
 		0A7410BF2A6E1A18008260EE /* VTImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7410BE2A6E1A18008260EE /* VTImageLoader.swift */; };
 		0A7410C12A6E1A71008260EE /* EnvironmentValues+ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7410C02A6E1A71008260EE /* EnvironmentValues+ImageCache.swift */; };
@@ -84,6 +86,8 @@
 		0A5037FA2A7295AC00E4F51D /* VTHostManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTHostManager.swift; sourceTree = "<group>"; };
 		0A5037FC2A7297BC00E4F51D /* VTMovieStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTMovieStore.swift; sourceTree = "<group>"; };
 		0A5037FE2A72A09E00E4F51D /* VTLoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTLoaderView.swift; sourceTree = "<group>"; };
+		0A73A6672A737C6200155EBC /* VTAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTAppDelegate.swift; sourceTree = "<group>"; };
+		0A73A6692A737CDB00155EBC /* VTSceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTSceneDelegate.swift; sourceTree = "<group>"; };
 		0A7410BC2A6E1A08008260EE /* VTAsyncImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTAsyncImage.swift; sourceTree = "<group>"; };
 		0A7410BE2A6E1A18008260EE /* VTImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTImageLoader.swift; sourceTree = "<group>"; };
 		0A7410C02A6E1A71008260EE /* EnvironmentValues+ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EnvironmentValues+ImageCache.swift"; sourceTree = "<group>"; };
@@ -156,6 +160,34 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		0A73A6662A737C4A00155EBC /* AppLife */ = {
+			isa = PBXGroup;
+			children = (
+				0AA8CF412A677F9A00A2F6F1 /* VaultApp.swift */,
+				0A73A6672A737C6200155EBC /* VTAppDelegate.swift */,
+				0A73A6692A737CDB00155EBC /* VTSceneDelegate.swift */,
+			);
+			path = AppLife;
+			sourceTree = "<group>";
+		};
+		0A73A66B2A737E3400155EBC /* Testing */ = {
+			isa = PBXGroup;
+			children = (
+				0AC856432A6932BB00C1A6B5 /* CombineExamples.swift */,
+			);
+			path = Testing;
+			sourceTree = "<group>";
+		};
+		0A73A66C2A737E4A00155EBC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0AC856452A6954D100C1A6B5 /* VTMovie.swift */,
+				C92FE42F2A6ACF7300E3843C /* VTTools.swift */,
+				0A5037FC2A7297BC00E4F51D /* VTMovieStore.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		0A7410BB2A6E19EF008260EE /* ImageLoader */ = {
 			isa = PBXGroup;
 			children = (
@@ -170,6 +202,8 @@
 		0A7410CA2A6E50FD008260EE /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				0A7410C42A6E20BA008260EE /* VTAPIError.swift */,
+				0A7410D32A6E5418008260EE /* VTNetworkHelper.swift */,
 				0A5037FA2A7295AC00E4F51D /* VTHostManager.swift */,
 				0A7410CD2A6E528C008260EE /* VTAPI.swift */,
 				0A7410CF2A6E52A7008260EE /* VTRouter.swift */,
@@ -218,13 +252,11 @@
 		0AA8CF402A677F9A00A2F6F1 /* Vault */ = {
 			isa = PBXGroup;
 			children = (
-				0A7410C42A6E20BA008260EE /* VTAPIError.swift */,
-				0A7410D32A6E5418008260EE /* VTNetworkHelper.swift */,
+				0A73A66B2A737E3400155EBC /* Testing */,
+				0A73A6662A737C4A00155EBC /* AppLife */,
 				0A7410CA2A6E50FD008260EE /* Network */,
 				0A7410BB2A6E19EF008260EE /* ImageLoader */,
-				C94EB6392A697399005D67C7 /* Info.plist */,
-				0AC856432A6932BB00C1A6B5 /* CombineExamples.swift */,
-				0AA8CF412A677F9A00A2F6F1 /* VaultApp.swift */,
+				0A73A66C2A737E4A00155EBC /* Models */,
 				0AA8CF432A677F9A00A2F6F1 /* ContentView.swift */,
 				0A7410C62A6E48CF008260EE /* VTMovieDetail.swift */,
 				0AC856472A6A11D600C1A6B5 /* VTMovieRow.swift */,
@@ -232,9 +264,7 @@
 				0A5037FE2A72A09E00E4F51D /* VTLoaderView.swift */,
 				0AA8CF452A677F9E00A2F6F1 /* Assets.xcassets */,
 				0AA8CF472A677F9E00A2F6F1 /* Preview Content */,
-				0AC856452A6954D100C1A6B5 /* VTMovie.swift */,
-				C92FE42F2A6ACF7300E3843C /* VTTools.swift */,
-				0A5037FC2A7297BC00E4F51D /* VTMovieStore.swift */,
+				C94EB6392A697399005D67C7 /* Info.plist */,
 			);
 			path = Vault;
 			sourceTree = "<group>";
@@ -398,6 +428,7 @@
 				0A7410C72A6E48CF008260EE /* VTMovieDetail.swift in Sources */,
 				0A7410BD2A6E1A08008260EE /* VTAsyncImage.swift in Sources */,
 				0AC856442A6932BB00C1A6B5 /* CombineExamples.swift in Sources */,
+				0A73A66A2A737CDB00155EBC /* VTSceneDelegate.swift in Sources */,
 				C92FE4302A6ACF7300E3843C /* VTTools.swift in Sources */,
 				0AA8CF442A677F9A00A2F6F1 /* ContentView.swift in Sources */,
 				0AC8564A2A6A123100C1A6B5 /* VTMovieIconImage.swift in Sources */,
@@ -409,6 +440,7 @@
 				0AC856482A6A11D600C1A6B5 /* VTMovieRow.swift in Sources */,
 				0A5037FB2A7295AC00E4F51D /* VTHostManager.swift in Sources */,
 				0A7410E32A6E5A2C008260EE /* VTResponseCode.swift in Sources */,
+				0A73A6682A737C6200155EBC /* VTAppDelegate.swift in Sources */,
 				0A5037FD2A7297BC00E4F51D /* VTMovieStore.swift in Sources */,
 				0A7410D82A6E5581008260EE /* VTURLSession.swift in Sources */,
 				0A7410E52A6E5BAD008260EE /* VTAPIDataCache.swift in Sources */,

@@ -14,11 +14,18 @@ struct VTMovieDetail: View {
     
     var body: some View {
         NavigationView {
-            VStack {
+            VStack(alignment: .leading) {
+                if let posterName = movie.poster_name {
+                    VTMovieIconImage<Text>(imageName: posterName)
+                        .frame(width: 120, alignment: .center)
+                }
                 Text(movie.name)
-                Spacer()
+//                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .font(.title)
                 Text(movie.synopsis ?? "")
-            }
+                Text("是否已下载：\(movie.is_downloaded)")
+                Text("位置：\(movie.filePath ?? "")")
+            }.navigationTitle(movie.name)
         }
     }
 }

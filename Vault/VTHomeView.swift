@@ -72,9 +72,10 @@ struct VTHomeView: View {
                     NavigationLink {
                         VTMovieDetail(movie: movie)
                     } label: {
-                        Text(movie.name)
+                        VTMovieRow(movie: movie)
+//                        Text(movie.name)
                     }
-                    .frame(height: 44)
+                    .frame(height: 80)
                 }
             }
             .navigationTitle("Vault")

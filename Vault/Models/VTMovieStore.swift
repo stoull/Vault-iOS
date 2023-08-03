@@ -20,7 +20,7 @@ class VTMovieStore {
     public static let shared = VTMovieStore()
     
     func getUrl(keywords: String) throws -> URL {
-        let root = VTHostManager.host(with: .internet)
+        let root = VTHostManager.shared.host
         let path = "/api/v1/movies/search"
 
         guard var components = URLComponents(string: root) else {

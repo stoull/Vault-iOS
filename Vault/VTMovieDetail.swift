@@ -13,20 +13,28 @@ struct VTMovieDetail: View {
     var movie: VTMovie
     
     var body: some View {
-        NavigationView {
-            VStack(alignment: .leading) {
+        VStack(alignment: .leading) {
+            Text(movie.name)
+                .lineLimit(4)
+            HStack {
                 if let posterName = movie.poster_name {
-                    VTMovieIconImage<Text>(imageName: posterName)
-                        .frame(width: 120, alignment: .center)
+                    Spacer()
+                    VTMoviePosterImage<Text>(posterName: posterName)
+                        .frame(alignment: .center)
+                        .aspectRatio(contentMode: .fit)
+                        .cornerRadius(4.0)
+                    Spacer()
                 }
-                Text(movie.name)
+            }
+            
+//                Text(movie.name)
 //                    .frame(maxWidth: .infinity, alignment: .leading)
-                    .font(.title)
-                Text(movie.synopsis ?? "")
-                Text("是否已下载：\(movie.is_downloaded)")
-                Text("位置：\(movie.filePath ?? "")")
-            }.navigationTitle(movie.name)
+//                    .font(.title)
+            Text(movie.synopsis ?? "")
+            Text("是否已下载：\(movie.is_downloaded)")
+            Text("位置：\(movie.filePath ?? "")")
         }
+        .navigationBarTitle(movie.name, displayMode: .inline)
     }
 }
 

@@ -13,7 +13,7 @@ enum VTRouter {
     case searchMovie(keywords: String)
     
     var baseURL: String {
-        return VTHostManager.host(with: .internet)
+        return VTHostManager.shared.host
     }
     
     var method: HTTPMethod {

@@ -7,22 +7,20 @@
 
 import SwiftUI
 
-struct VTMovieIconImage<Placeholder: View>: View {
+struct VTMoviePosterImage<Placeholder: View>: View {
     @StateObject private var loader: VTImageLoader
     private let placeholder: Placeholder
     private let image: (UIImage) -> Image
     
     // fetch image from url with image name
-    var imageName: String?
+    var posterName: String?
     
-    init(imageName: String) {
-        var rImageName = imageName
-        if imageName.count < 1 {
+    init(posterName: String) {
+        var rImageName = posterName
+        if posterName.count < 1 {
             rImageName = ""
         }
-//        let imgStr = "http://192.168.0.101:5001/images/poster/" + rImageName
-        let imgStr = "http://192.168.2.53:5000/images/poster/" + rImageName
-        
+        let imgStr = VTHostManager.shared.imageHost + "/images/poster/" + rImageName
         self.init(url: URL(string: imgStr)!,
                   placeholder: { Text("Loading ...") as! Placeholder },
                   image: { Image(uiImage: $0).resizable() }
@@ -45,30 +43,16 @@ struct VTMovieIconImage<Placeholder: View>: View {
     private var content: some View {
         VStack {
             if loader.image != nil {
-                if #available(iOS 15.0, *) {
-                    image(loader.image!)
-                        .frame(width: 120.0, height: 120.0)
-                        .clipShape(Circle())
-                        .overlay {
-                            Circle().stroke(.white, lineWidth: 2.0)
-                        }
-                        .shadow(radius: 8)
-                } else {
-                    image(loader.image!)
-                        .frame(width: 120.0, height: 120.0)
-                        .cornerRadius(8.0)
-                        .shadow(radius: 8.0)
-                }
+                image(loader.image!)
             } else {
                 placeholder
             }
         }.onAppear(perform: loader.load)
     }
-//    func URLSession.shared.dataTaskPublisher(for: "http://192.168.1.200:5000/images/poster/p812857342.jpg")
 }
 
 //struct VTMovieImage_Previews: PreviewProvider {
 //    static var previews: some View {
-//        VTMovieIconImage(imageName: "p2308392633.jpg")
+//        VTMoviePosterImage(imageName: "p2308392633.jpg")
 //    }
 //}

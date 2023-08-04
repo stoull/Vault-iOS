@@ -16,7 +16,7 @@ struct VTHomeView: View {
     @State private var errorAlertMessage: String = ""
     
     let backgroundGradient = LinearGradient(
-        colors: [Color(hex: "#FBEAFF"), Color(hex: "#C4FCEF")],
+        colors: [Color("kLineGradient1"), Color("kLineGradient2")],
         startPoint: .leading, endPoint: .trailing)
     var body: some View {
         NavigationView {
@@ -53,7 +53,7 @@ struct VTHomeView: View {
                     }
                     
                     VTLoaderView(tintColor: .blue, scaleSize: 1.0)
-                        .padding()
+                        .frame(width: 30.0)
                         .hidden(isHideLoader)
                     
                     Button {

@@ -17,7 +17,7 @@ struct VTHostManager {
         case internet
     }
     
-    var hostType: VTHostManager.HostType = .work
+    var hostType: VTHostManager.HostType = .internet
     
     var host: String {
         switch hostType {

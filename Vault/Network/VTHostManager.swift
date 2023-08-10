@@ -24,20 +24,20 @@ struct VTHostManager {
         case .home:
             return "http://192.168.2.53:8000"
         case .work:
-            return "http://raspberrypi.local:8000"
+            return "http://hutpi.local:8000"
         case .internet:
-            return "http://54.67.50.123:8000"
+            return "http://43.202.1.3:8000"
         }
     }
     
     var imageHost: String {
         switch hostType {
         case .home:
-            return "http://192.168.2.53:8000"
+            return "http://hutpi.local:8000"
         case .work:
-            return "http://192.168.1.176:8000"
+            return "http://hutpi.local:8000"
         case .internet:
-            return "http://54.67.50.123:8000"
+            return "http://hutpi.local:8000"
         }
     }
     
@@ -46,7 +46,7 @@ struct VTHostManager {
         case .home:
             return "http://192.168.2.53:8000"
         case .work:
-            return "http://raspberrypi.local:8000"
+            return "http://hutpi.local:8000"
         case .internet:
             return "http://54.67.50.123:8000"
         }

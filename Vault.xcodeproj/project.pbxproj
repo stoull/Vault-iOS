@@ -47,6 +47,8 @@
 		0AC856482A6A11D600C1A6B5 /* VTMovieRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC856472A6A11D600C1A6B5 /* VTMovieRow.swift */; };
 		0AC8564A2A6A123100C1A6B5 /* VTMovieIconImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC856492A6A123100C1A6B5 /* VTMovieIconImage.swift */; };
 		C92FE4302A6ACF7300E3843C /* VTTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92FE42F2A6ACF7300E3843C /* VTTools.swift */; };
+		C994C0AF2D13FB210044E769 /* HomePageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C994C0AE2D13FB210044E769 /* HomePageUITests.swift */; };
+		C994C0B12D13FFE20044E769 /* HomePageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C994C0B02D13FFE20044E769 /* HomePageTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -124,6 +126,8 @@
 		0AC856492A6A123100C1A6B5 /* VTMovieIconImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTMovieIconImage.swift; sourceTree = "<group>"; };
 		C92FE42F2A6ACF7300E3843C /* VTTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTTools.swift; sourceTree = "<group>"; };
 		C94EB6392A697399005D67C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C994C0AE2D13FB210044E769 /* HomePageUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageUITests.swift; sourceTree = "<group>"; };
+		C994C0B02D13FFE20044E769 /* HomePageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -284,6 +288,7 @@
 			isa = PBXGroup;
 			children = (
 				0AA8CF522A677F9E00A2F6F1 /* VaultTests.swift */,
+				C994C0B02D13FFE20044E769 /* HomePageTests.swift */,
 			);
 			path = VaultTests;
 			sourceTree = "<group>";
@@ -292,6 +297,7 @@
 			isa = PBXGroup;
 			children = (
 				0AA8CF5C2A677F9E00A2F6F1 /* VaultUITests.swift */,
+				C994C0AE2D13FB210044E769 /* HomePageUITests.swift */,
 				0AA8CF5E2A677F9E00A2F6F1 /* VaultUITestsLaunchTests.swift */,
 			);
 			path = VaultUITests;
@@ -467,6 +473,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AA8CF532A677F9E00A2F6F1 /* VaultTests.swift in Sources */,
+				C994C0B12D13FFE20044E769 /* HomePageTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,6 +481,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C994C0AF2D13FB210044E769 /* HomePageUITests.swift in Sources */,
 				0AA8CF5D2A677F9E00A2F6F1 /* VaultUITests.swift in Sources */,
 				0AA8CF5F2A677F9E00A2F6F1 /* VaultUITestsLaunchTests.swift in Sources */,
 			);
@@ -678,9 +686,9 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = ZXPXG49X5L;
+				DEVELOPMENT_TEAM = DFM3SPMA69;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.growatt.hut.test.VaultTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -698,9 +706,9 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = ZXPXG49X5L;
+				DEVELOPMENT_TEAM = DFM3SPMA69;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.growatt.hut.test.VaultTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -717,8 +725,9 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = ZXPXG49X5L;
+				DEVELOPMENT_TEAM = DFM3SPMA69;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.growatt.hut.test.VaultUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -735,8 +744,9 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = ZXPXG49X5L;
+				DEVELOPMENT_TEAM = DFM3SPMA69;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.growatt.hut.test.VaultUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
